@@ -1,49 +1,67 @@
-# Java Single Threaded Socket Server and Client
+# Java Socket Programming – Single Threaded Server & Client
 
-This project demonstrates a basic **single-threaded server and client communication** using Java Sockets.
-
-- The server listens on port `8010`.
-- When a client connects, it accepts the connection and responds with a greeting message.
-- The client sends a message to the server and displays the response.
-- Built using Java's `Socket`, `ServerSocket`, `BufferedReader`, and `PrintWriter`.
+A simple Java application demonstrating socket communication between a server and a client using a single-threaded approach.
 
 ---
 
-## 🧪 How to Run
+## 📌 Overview
 
-### ➤ Step 1: Compile both files
+- **Server** listens on port `8010`.
+- Accepts a single client connection at a time.
+- **Client** connects to the server and exchanges a basic message.
+
+---
+
+## 🛠️ Technologies Used
+
+- Java SE
+- Socket Programming (`java.net`)
+- Input/Output Streams
+
+---
+
+## 🚀 How to Run
+
+### 1. Compile the Code
 ```bash
 javac Server.java
 javac Client.java
 ```
 
-### ➤ Step 2: Run the Server
+### 2. Start the Server
 ```bash
 java Server
 ```
 
-### ➤ Step 3: Run the Client (in a new terminal or tab)
+### 3. Run the Client (in a new terminal)
 ```bash
 java Client
 ```
 
 ---
 
-## 🔍 Sample Output
+## 🖥️ Example Output
 
-### Server Console
+### Server
 ```
 Server is listening on port: 8010
 Connection accepted from client: /127.0.0.1:XXXXX
 ```
 
-### Client Console
+### Client
 ```
 Response from the socket is: Hello from the server
 ```
 
 ---
 
-## 👨‍💻 Author
+## 👤 Author
 
-Ashish Dubey
+**Ashish Dubey**
+
+---
+
+## 📂 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
